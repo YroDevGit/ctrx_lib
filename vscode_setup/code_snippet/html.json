@@ -1,0 +1,71 @@
+{
+	"Print data": {
+	"prefix": "@display_data",
+	"body": [
+	"<?php display('${1:data}'); ?>$0"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"if else": {
+	"prefix": "@if",
+	"body": [
+	"<?php if(${1:condition}): ?>$0",
+	"${2:  //to do...}",
+	"<?php endif; ?>"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"Print string": {
+	"prefix": "@write",
+	"body": [
+	"<?= ${1:text} ?>$0"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"Print string by string": {
+	"prefix": "@display",
+	"body": [
+	"<?= ${1:text} ?>$0"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"Printing string by string": {
+	"prefix": "@print",
+	"body": [
+	"<?= ${1:text} ?>$0"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"for each curly": {
+	"prefix": "@foreach",
+	"body": [
+	"<?php foreach(${1:extract}): ?>$0",
+	"  //to do...",
+	"<?php endforeach; ?>"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"while curly": {
+	"prefix": "@while",
+	"body": [
+	"<?php while(${1:extract}): ?>$0",
+	"  //to do...",
+	"<?php endwhile; ?>"
+	 	],
+	 	"description": "Log output to console"
+	},
+
+	"php": {
+	"prefix": "@php",
+	"body": [
+	"<?php ${1:insert} ?>"
+	 	],
+	 	"description": "Log output to console"
+	}
+}
